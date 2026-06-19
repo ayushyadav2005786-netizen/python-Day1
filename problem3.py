@@ -1,21 +1,4 @@
-# Write a python program to print the contents of a directory using the os module search online for the function which does that.
+# Check the type of variable assigned using input () function.
 
-import os
-
-# Option 1: List current directory contents
-contents = os.listdir()
-print("Current directory contents:")
-for item in contents:
-    print(item)
-
-# Option 2: List a specific directory
-path = "C:/Users/YourName/Documents"
-try:
-    contents = os.listdir(path)
-    print(f"\nContents of {path}:")
-    for item in contents:
-        print(item)
-except FileNotFoundError:
-    print("Error: Directory not found")
-except PermissionError:
-    print("Error: No permission to access this directory")
+a = input("enter the value of a")
+print(type(a))
